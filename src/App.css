@@ -1,0 +1,325 @@
+.App{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body{
+  background-color: #0B0320;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+.main-text{
+  margin-top: auto;
+  margin-left: 2rem;
+  max-width: 700px;
+  min-width: 200px;
+}
+.hi{
+  color: white;
+  margin: auto;
+  font-size: 4rem;
+  margin-top: 100px;
+  font-weight: 800;
+}
+
+.bottom-text{
+  color: white;
+  font-size: 40px;
+  background: -webkit-linear-gradient(#e5e9ed, #97a4b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+  margin: auto;
+  margin-top: 60px;
+  max-width: 550px;
+  min-width: 300px;
+  pointer-events: none;
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;
+  flex-shrink: 2;
+}
+.about-me{
+  max-width: 700px;
+  color: white;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@media screen and (max-width: 550px) {
+.main-text {
+  margin-top: -40px;
+}
+.about-me{
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+}
+/* -------- scrolling skills------------ */
+
+.scroll-container {
+  transform: rotate(-3deg);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 200px;
+  border-color: #0B0320;
+}
+.skills-logos {
+  width: 100px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.skills-logo{
+  width: 100px;
+  margin-right: 50px;
+  margin-top: 10px;
+  filter: invert();
+}
+
+.scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 16s linear infinite;
+  -webkit-animation: my-animation 16s linear infinite;
+  animation: my-animation 16s linear infinite;
+}
+.Github{
+  filter: invert(1);
+  width: 160px;
+  margin-right: 50px;
+  margin-left: -27px;
+  margin-top: 10px;
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+.skills-title{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  transform: rotate(3deg);
+}
+
+/* ---------Nav Bar-------------------- */
+.container-nav{
+ display: flex;
+ position: fixed; 
+ background-color: #0a021b;
+  top: 0; 
+  width: 100%;
+  overflow: hidden;
+}
+.Github-logo{
+  filter: invert(1);
+  width: 50px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+a{
+  margin-left: auto;
+}
+
+.heading{
+  color: white;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.parts-nav{
+  color: white;
+  margin-right: 10px;
+}
+
+
+/* --------projects--------------- */
+
+.project-title{
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+.project-imgs{
+  width: 430px;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.project-text{
+  color: white;
+  max-width: 320px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.img-text{
+  border: 3px solid black;
+  background-color: #000000;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #5C258D 0%, #4389A2  51%, #5C258D  100%);
+  margin: 10px;
+  padding: 15px 35px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+  margin: auto;
+  margin-left: 50px ;
+  margin-right: -10px;
+  margin-top: 20px;
+  min-width: 90px;
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+.btn-container{
+display: flex;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+
+.btn-grad:hover, .submit:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+img {
+  transition: .5s ease;
+  }
+  
+  img:hover{
+  box-shadow:
+  1px 1px #5C258D,
+  2px 2px #5C258D,
+  3px 3px #5C258D,
+  4px 4px #5C258D,
+  5px 5px #5C258D,
+  6px 6px #5C258D;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  transition: .5s ease;
+  }
+
+  /* ---------contact------------ */
+
+  .contact-title{
+    color: white;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+   text-align: center;
+   font-size: 3rem;
+  }
+  form{
+    margin-left: 30px;
+    margin-right: auto;
+  }
+  label{
+    color: white;
+    font-size: 20px;
+  }
+  input, textarea{
+    border-radius: 8px;
+    box-shadow: 10px #5C258D;
+    width: 300px;
+    height: 35px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  textarea{
+    height: 60px;
+  }
+  .submit{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #5C258D 0%, #4389A2  51%, #5C258D  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  form, label{
+    text-align: center;
+  }
+
+  .contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  
+  @media screen and (max-width: 390px) {
+    .parts-nav{
+      display: none;
+    }
+    .scroll-container{
+      margin-top: 20px;
+    }
+    .project-imgs{
+    width: 410px;
+    }
+    .btn-grad{
+      max-width: 90px;
+      margin-left: 10px;
+      margin-right: 20px;
+      font-size: 15.5px;
+    }
+    .contact-title {
+      margin: auto;
+      margin-bottom: 27px;
+    }
+    } 
