@@ -3,7 +3,7 @@ import spaceman from '../src/spaceman.png'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id='home'>
       <div className='main-text'>
       <h1 className='hi'>Hello!<span className='hand'>👋</span> I am Ollie </h1>
       <p className='bottom-text'>Frontend Engineer</p>
@@ -15,8 +15,8 @@ function App() {
       </div>
       <img src= {spaceman} className='logo' alt='not work'/>
     </div>
-    
-    
+
+
   );
 }
 

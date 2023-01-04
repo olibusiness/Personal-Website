@@ -2,10 +2,18 @@ import './App.css'
 import space from '../src/project-imgs/space-lauchc.png'
 import study from '../src/project-imgs/study-buddyc.png'
 import notes from '../src/project-imgs/oli-notec.png'
+import Aos from 'aos';
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
 
 function Projects(props) {
+
+    useEffect(() => {
+        Aos.init({duration: 3000})
+    })
+
     return(
-        <div>
+        <div id="projects" data-aos = 'fade-up'>
             <h2 className='project-title'>My Projects</h2>
             <div className='project-container'>
                 

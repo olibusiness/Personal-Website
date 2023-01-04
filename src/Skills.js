@@ -7,13 +7,20 @@ import github from '../src/skills-logo/GitHub-text.png'
 import bootstrap from '../src/skills-logo/bootstrap-logo.png'
 import json from '../src/skills-logo/json-logo.png'
 import npm from '../src/skills-logo/npm-logo.png'
+import Aos from 'aos';
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
 
 
 
 function Skills () {
 
+    useEffect(() => {
+        Aos.init({duration: 3000})
+    })
+
     return(
-        <div className='scroll-container'>
+        <div className='scroll-container' data-aos = 'fade-up'>
             <h2 className='skills-title'>My Skills</h2>
             <div className='scroll-text'>
                 <img src= {htmlLogo} className = 'skills-logos' alt='html logo'/>
